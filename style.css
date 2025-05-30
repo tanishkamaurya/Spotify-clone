@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+body{
+    background-color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+nav ul{
+     display: flex; /*put elements horizontally */
+     list-style-type: none; /* no bullets */
+     height: 75px;
+     background-color: black
+}
+nav ul li{
+    padding: 28px 30px;
+}
+.brand img{
+    width: 118px;
+    padding: 10px;
+    
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family:'Ubuntu', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url(bg2.jpg);
+}
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: black;  /*#1DB954 */
+    color: white;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#masterPlay {
+  background: none;       /* Remove background */
+  border: none;           /* Remove border */
+  padding: 0;             /* Remove default padding */
+  cursor: pointer;        /* Pointer cursor on hover */
+  outline: none;          /* Remove blue outline on focus */
+  color: inherit;         /* Inherit font/icon color */
+  font-size: inherit;     /* Inherit font size (optional) */
+}
+.icons{
+    margin-top: 14px;
+}
+.icons i{
+    cursor: pointer;
+}
+#myProgressBar{
+    width: 80vw ;
+    cursor: pointer;
+}
+.songItemContainer{
+    margin-top: 40px;
+}
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: black;
+    color: aliceblue;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px; /* curveness of container */
+    padding: 0 5px; /* length of the bar */
+}
+.songItem img{
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 34px;
+}
+.timestamp{
+    display: flex;
+    align-items: center;
+    margin: 0 23px;
+}
+.songItem i{
+    margin-left: 15px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.songInfo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    left: 10vw;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
